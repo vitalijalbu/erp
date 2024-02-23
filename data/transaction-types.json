@@ -1,0 +1,10 @@
+[
+    { "value": null, "label": "All" },
+    { "value": "1", "label": "Purchase" },
+    { "value": "2", "label": "Production" },
+    { "value": "3", "label": "Sales" },
+    { "value": "4", "label": "Adjustment" },
+    { "value": "5", "label": "Transfer" },
+    { "value": "6", "label": "Production merge" }
+]
+  

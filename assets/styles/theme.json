@@ -1,0 +1,122 @@
+{
+  "theme": "light",
+  "token": {
+    "colorPrimary": "#33855c",
+    "colorError": "#e20004",
+    "borderRadius": 6,
+    "wireframe": true,
+    "fontSize": 14,
+    "controlHeightSM": 22,
+    "controlHeight": 28,
+    "controlHeightLG": 28,
+    "colorTextDisabled": "rgba(0, 0, 0, 0.65)"
+  },
+  "components": {
+    "Alert": {
+      "fontSizeIcon": 10,
+      "paddingContentVerticalSM": 6,
+      "paddingContentHorizontalLG": 10
+    },
+    "Checkbox": {
+      "controlInteractiveSize": 16,
+      "fontSize": 14,
+      "lineHeight": 1.5,
+      "borderRadius": 6
+    },
+    "Button": {
+      "controlOutline": 0,
+      "paddingInline": 10,
+      "colorLink": "#33855c"
+    }, 
+    "Form": {
+      "labelHeight": 18,
+      "itemMarginBottom": 5,
+      "verticalLabelPadding": "0"
+    },
+    "Tag": {
+      "controlHeight": 26
+    },
+    "Avatar": {
+      "containerSizeSM": 28,
+      "containerSize": 40,
+      "containerSizeLG": 54
+    },
+    "Switch": {
+      "motionDurationMid": "0.1s"
+    },
+    "Drawer": {
+      "padding": 6
+    },
+    "Divider": {
+      "margin": 0,
+      "marginLG": 4,
+      "marginXS": 2,
+      "colorTextHeading": "#33855c",
+      "fontSize": 14,
+      "fontSizeLG": 14
+    },
+    "Steps": {
+      "colorPrimary": "#ff4d4f"
+    },
+    "Modal": {
+      "borderRadiusLG": 16,
+      "borderRadiusSM": 16,
+      "titleFontSize": 16,
+      "paddingMD": 12,
+      "paddingLG": 12,
+      "zIndex": 1900
+    },
+    "Message": {
+      "zIndexPopup": 2000
+    },
+    "Table": {
+      "colorBorderSecondary": "rgb(0 0 0 / 10%)",
+      "colorFillAlter": "#fafafa",
+      "controlHeight": 20,
+      "padding": 8,
+      "paddingContentVerticalLG": 10,
+      "motionDurationMid": 0,
+      "motionDurationSlow": 0
+    },
+    "Menu": {
+      "borderRadius": 16,
+      "subMenuItemBorderRadius": 16,
+      "subMenuItemBg": "#fafafa",
+      "itemHeight": 30,
+      "lineWidth": 1,
+      "lineHeight": 1,
+      "margin": 4,
+      "itemMarginBlock": 2,
+      "itemMarginInline": 0,
+      "iconMarginInlineEnd": 4,
+      "itemPaddingInline": 8,
+      "lineWidthFocus": 1,
+      "motionDurationMid": 0,
+      "motionDurationSlow": 0,
+      "dropdownWidth": 240
+    },
+    "Col": {
+      "padding": 0
+    },
+    "Dropdown": {
+      "motionDurationMid": 0,
+      "motionDurationSlow": 0
+    },
+    "FloatButton": {
+      "boxShadowSecondary": "0px 1px 2px rgba(0, 0, 0, 0.2)",
+      "motionDurationMid": 0,
+      "motionDurationSlow": 0
+    },
+    "List":{
+      "paddingContentHorizontal": 8,
+      "paddingContentVertical": 8
+    },
+    "Card":{
+      "padding": 16,
+      "paddingSM": 16,
+      "paddingLG": 16,
+      "paddingXS": 16,
+      "motionDurationMid": 0
+    }
+  }
+}

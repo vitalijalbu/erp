@@ -1,0 +1,21 @@
+.custom-datepicker .ant-picker-content{
+    thead{
+        th:first-of-type {
+            background-color: #ffccc7;
+       }
+        th:last-of-type {
+            background-color: #bae0ff;
+       }
+   }
+    tbody {
+        .ant-picker-cell:first-of-type::before {
+            background-color: #ffccc7;
+       }
+        .ant-picker-cell:last-of-type::before {
+            background-color: #bae0ff;
+       }
+        .ant-picker-cell-selected::before{
+            background-color: transparent !important;
+       }
+   }
+}

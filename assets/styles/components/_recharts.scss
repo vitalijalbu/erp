@@ -1,0 +1,17 @@
+text.recharts-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+.recharts-surface{
+    height: 100%;
+    display: block;
+    width: 100%;
+    & svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+.recharts-responsive-container{
+    min-height: 550px;
+    width: 100%;
+}

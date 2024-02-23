@@ -1,0 +1,63 @@
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid{
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container-sm, .container, .page.small {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container, .page.small {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container, .page.small {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .page.small {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .page.small {
+    max-width: 1220px;
+  }
+  .page.small {
+    max-width: 1100px;
+  }
+}
+.page-heading {
+  width: 100%;
+  box-sizing: border-box; /* Ensures that padding and borders are included in the width */
+  transition: all 0.3s ease; /* Add a smooth transition effect if needed */
+}
+
+.page-heading.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff; /* You can adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add any other styles you want for the sticky header */
+}

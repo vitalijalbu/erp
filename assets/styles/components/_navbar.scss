@@ -1,0 +1,62 @@
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar, .navbars {
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+.navbar-inner {
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+.navbar .left, .navbar .right {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ant-layout-header .ant-menu {
+
+    justify-content: end;
+}
+.navbar .right{
+    width: 40%;
+}
+.navbar .title {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 10;
+    font-weight: var(--f7-navbar-title-font-weight);
+    display: inline-block;
+    line-height: var(--f7-navbar-title-line-height);
+    text-align: var(--f7-navbar-title-text-align);
+    font-size: var(--f7-navbar-title-font-size);
+    margin-left: var(--f7-navbar-title-margin-left);
+    margin-right: var(--f7-navbar-title-margin-left);
+}

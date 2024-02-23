@@ -1,0 +1,19 @@
+{
+  "name": "conversion",
+  "version": "1.0.0",
+  "description": "script for converting blockly json to php functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prettier/plugin-php": "^0.19.6",
+    "blockly": "^10.0.0",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.0",
+    "yargs": "^17.7.2"
+  }
+}

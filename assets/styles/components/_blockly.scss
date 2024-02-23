@@ -1,0 +1,22 @@
+.blocklyDropDownDiv {
+	z-index: 9999 !important;
+}
+.blocklyMultilineText, .blocklyHtmlTextAreaInput {
+	min-width: 100px !important;
+	max-width: 400px !important;
+	text-wrap: pretty !important;
+	min-height: 100px !important;
+	border: 0.01mm solid lightgray;
+	overflow: auto;
+	
+}
+.blocklyEditableText, .blocklyFieldRect{
+	min-width: 100px !important;
+}
+
+// .blocklyText {
+// 	font-size: 11.5pt !important;
+// }
+.blocklySelectionItem:hover {
+	background-color: rgba(169, 169, 169, 0.452);
+}

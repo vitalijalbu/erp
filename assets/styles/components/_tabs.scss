@@ -1,0 +1,26 @@
+.fixed-tabs {
+    position: relative;
+    .ant-tabs-nav {
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        // height: 100px;
+        width: 100%;
+        overflow: hidden;
+        margin: -5px;
+    }
+    .ant-tabs-content {
+      top: 56px;
+      overflow-y: visible; 
+      // max-height: calc(100vh - 56px); 
+    }
+  }
+  
+  .ant-tabs-top >.ant-tabs-nav::before{
+    border-color: $border-color;
+  }
+  .tab-error .ant-tabs-nav .ant-tabs-ink-bar{
+    background-color: #e20004;
+  }

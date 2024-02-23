@@ -1,0 +1,66 @@
+
+.erp-datatable .ant-table-tbody > tr > td {
+    padding:8px 6px;
+}
+
+.erp-datatable .ant-table-tbody > tr:nth-child(2n + 1) > td {
+    background-color: #efefef;
+}
+
+
+#cutting-table,
+#production-table,
+.chiorino-receipt-item {
+    .touched {
+        background-color: #ffc107!important;
+    }
+
+    .ant-form-item {
+        margin-bottom:0!important;
+    }
+}
+
+.chiorino-receipt-item {
+    .ant-card-head-title .ant-form-item {
+        margin-bottom:0;
+    }
+
+    .ant-card-body {
+        padding: 8px 16px;
+    }
+}
+
+.ant-table-wrapper .ant-table .ant-table-title, 
+.ant-table-wrapper .ant-table .ant-table-footer, 
+.ant-table-wrapper .ant-table .ant-table-thead>tr:not(.ant-table-measure-row)>th, 
+.ant-table-wrapper .ant-table .ant-table-tbody>tr:not(.ant-table-measure-row)>th, 
+.ant-table-wrapper .ant-table .ant-table-tbody>tr:not(.ant-table-measure-row)>td, 
+.ant-table-wrapper .ant-table tfoot>tr:not(.ant-table-measure-row)>th, 
+.ant-table-wrapper .ant-table tfoot>tr:not(.ant-table-measure-row)>td {
+    padding: 6px 4px!important;
+}
+
+.ant-table-wrapper .ant-table .ant-table-filter-trigger {
+    margin-inline: 1px -4px;
+    padding: 0 2px;
+}
+.ant-table-cell-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px;
+    max-width: 120px;
+    white-space: nowrap !important;
+}
+
+tr.disabled {
+    background: #ddd;
+    cursor: not-allowed;
+    pointer-events: all !important;
+    button, input{
+        display: none !important;
+    }
+    .ant-table-selection-column, .ant-table-selection-column *{
+        cursor: not-allowed;
+        pointer-events: all !important;
+    }
+}

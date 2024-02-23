@@ -1,0 +1,44 @@
+.ant-layout-sider{
+    border-right: 1px solid $border-color;
+}
+.sidenavs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    width: 100%;
+    .bottom{
+        border-top: 1px solid $border;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+    }
+}
+#popup-layout{
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .popup_header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-bottom: 1px solid $border;
+    }
+}
+.page{
+    margin: auto;
+}
+
+.main-layout .site-layout .ant-layout-content {
+    transition: margin-left 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+.page-actions_meta{
+    display: block;
+    width: 100%;
+}

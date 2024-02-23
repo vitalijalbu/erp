@@ -1,0 +1,13 @@
+.ant-layout-sider-children{
+  .ant-tag{
+    margin: 0 !important;
+  }
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light{
+  border-inline: none !important;
+}
+.ant-menu .ant-menu-submenu-arrow::before,
+.ant-menu .ant-menu-submenu-arrow::after{
+  height: 1.25px;
+}

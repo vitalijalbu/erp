@@ -1,0 +1,131 @@
+@keyframes antSlideUp {
+  0% {
+    transform: translateY(100%);
+    transformorigin: 0% 0%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    transformorigin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes antSlideOut {
+  0% {
+    transform: translateY(0);
+    transformorigin: 0% 0%;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    transformorigin: 0% 0%;
+    opacity: 0;
+  }
+}
+
+.ant-modal-slide-up-enter,
+.ant-modal-slide-up-appear {
+  transform: scale(0);
+  transform-origin: 0% 0%;
+  opacity: 0;
+  animation-play-state: paused;
+  animation-duration: 0.10s;
+  animation-fill-mode: both;
+  /* animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); */
+}
+
+.ant-modal-slide-up-leave {
+  animation-play-state: paused;
+  animation-duration: 0.10s;
+  animation-fill-mode: both;
+  /* animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); */
+}
+
+.ant-modal-slide-up-enter.ant-modal-slide-up-enter-active,
+.ant-modal-slide-up-appear.ant-modal-slide-up-appear-active {
+  animation-name: antSlideUp;
+  animation-play-state: running;
+}
+
+.ant-modal-slide-up-leave.ant-modal-slide-up-leave-active {
+  animation-name: antSlideOut;
+  animation-play-state: running;
+  pointer-events: none;
+}
+//custom
+.ant-modal .ant-modal-close,
+.ant-drawer-close{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fafafa !important;
+  right: 14px;
+  top: 14px;
+  font-size: 14px;
+  &:hover{
+    background: #f1f1f1 !important;
+  }
+}
+
+
+
+.modal-fullscreen {
+  width: 90%;
+  height: 90%;
+  min-height: 90%;
+  overflow: hidden;
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    .ant-modal-body {
+      overflow: auto;
+      height: 100%;
+    }
+   
+  }
+
+  &.p-0 .ant-modal-body {
+    padding: 0px !important;
+   }
+  & .ant-modal-body{
+    overflow-y: scroll;
+    position: relative;
+  }
+}
+
+@media (max-width: 1280px) {
+  .modal-fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+
+/* custom styles 
+.ant-modal-body {
+height: auto;
+display: block;
+padding: 20px 24px;
+border-top: 1px solid $border-color;
+border-bottom: 1px solid $border-color;
+}
+
+.ant-modal-header {
+padding: 20px 24px;
+}*/
+
+.ant-modal .ant-modal-header,
+.ant-modal .ant-modal-footer{
+  border-color: $border-color;
+  .ant-typography {
+    font-size: 16px !important;
+  }
+}
+
+

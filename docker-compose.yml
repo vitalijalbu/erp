@@ -1,0 +1,19 @@
+version: '2.2'
+services:
+    next:
+        dns:
+            - 8.8.8.8
+        container_name: chiorino_erp_front
+        restart: unless-stopped
+        image: node:latest
+        # command: /bin/bash -c "cd /opt && npm install && npm run build && npm run start"
+        command: /bin/bash -c "cd /opt && npm install && npm run dev"
+        volumes:
+            - ./:/opt
+        ports:
+            - "3000:3000"
+        networks:
+            - docker_erp-app-network
+networks:
+    docker_erp-app-network:
+        external: true

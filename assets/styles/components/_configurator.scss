@@ -1,0 +1,30 @@
+.configurator-widget {
+	[readonly] {
+		background-color: #e9e9e9;
+		pointer-events: none;
+	}
+
+	.ant-input-number-compact-item:not(
+			.ant-input-number-compact-last-item
+		).ant-input-number-compact-first-item {
+		border-radius: 6px;
+	}
+}
+
+.configurator-console-tabs {
+	.ant-tabs .ant-tabs-tab:first-child {
+		margin-left: 10px;
+	}
+}
+
+.not-display-virtual {
+	/*     .ant-select-item-empty{
+         display:none;
+     }
+     .ant-empty-image {
+         display:none;
+     }
+     .ant-empty-description{
+            display:none;
+     } */
+}
