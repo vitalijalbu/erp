@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('activity_log', function (Blueprint $table) {
-            $table->string('subject_id', 255)->change();
-            $table->string('causer_id', 255)->change();
-        });
+        // Schema::table('activity_log', function (Blueprint $table) {
+        //     $table->string('subject_id', 255)->change();
+        //     $table->string('causer_id', 255)->change();
+        // });
     }
 
     /**

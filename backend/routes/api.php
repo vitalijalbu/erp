@@ -85,10 +85,10 @@ Route::prefix('v1')->group(function () {
     
     Route::post('login', [UserController::class, 'login'])->middleware('guest:sanctum');
 
-    Route::middleware('auth:sanctum')->group(function() {
+    //Route::middleware('')->group(function() {
         Route::post('logout', [UserController::class, 'logout']);
         
-        //users
+        //users //auth:sanctum
         Route::get('user', [UserController::class, 'user']);
         Route::put('user/timezone', [UserController::class, 'updateTimezone']);
         Route::put('user/regional', [UserController::class, 'updateRegional']);
@@ -564,5 +564,5 @@ Route::prefix('v1')->group(function () {
         Route::apiResource('sales-total-discount-matrix.rows', SaleTotalDiscountMatrixRowController::class)
             ->parameters(['sales-total-discount-matrix' => 'saleTotalDiscountMatrix', 'rows' => 'saleTotalDiscountMatrixRow',])
             ->except(['update']);
-    });
+    //});
 });

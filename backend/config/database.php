@@ -96,42 +96,6 @@ return [
             ],
         ],
 
-        'erp_demo' => [
-            'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL2'),
-            'host' => env('DB_HOST2', 'localhost'),
-            'port' => env('DB_PORT2', '1433'),
-            'database' => env('DB_DATABASE2', 'forge'),
-            'username' => env('DB_USERNAME2', 'forge'),
-            'password' => env('DB_PASSWORD2', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'encrypt' => env('DB_ENCRYPT2', 'yes'),
-            'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE2', 'false'),
-            'options' => [
-                PDO::ATTR_EMULATE_PREPARES => true,
-            ],
-        ],
-
-        'ln' => [
-            'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL_LN'),
-            'host' => env('DB_HOST_LN', 'localhost'),
-            'port' => env('DB_PORT_LN', '1433'),
-            'database' => env('DB_DATABASE_LN', 'forge'),
-            'username' => env('DB_USERNAME_LN', 'forge'),
-            'password' => env('DB_PASSWORD_LN', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'encrypt' => env('DB_ENCRYPT_LN', 'yes'),
-            'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE_LN', 'false'),
-            'options' => [
-                PDO::ATTR_EMULATE_PREPARES => true,
-            ],
-        ],
-
     ],
 
     /*
